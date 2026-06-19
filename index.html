@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="首都直下型地震発生当日、東京23区から横浜の自宅へ。あなたの選択が帰宅の道を決める分岐型小説。">
-  <title>首都直下型地震、横浜まで帰る</title>
+  <meta name="description" content="分岐型インタラクティブ小説。シナリオを選んで、あなたの選択が物語を変える。">
+  <title>分岐型小説</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
@@ -14,53 +14,12 @@
   <div class="app">
     <header class="site-header">
       <p class="site-label">分岐型小説</p>
-      <h1 class="site-title">首都直下型地震、<wbr>横浜まで帰る</h1>
+      <h1 class="site-title">シナリオを選ぶ</h1>
     </header>
 
-    <!-- タイトル画面 -->
-    <section id="title-screen" class="screen title-screen">
-      <div class="title-card">
-        <p class="title-hook">コーヒーが波打った瞬間、速報が鳴る——横浜の家に、妻と3歳の息子がいる。電車も止まった。帰る道は、あなたの選択で決まる。</p>
-        <p class="title-meta">災害サスペンス / インタラクティブ小説 v1.1</p>
-        <button id="btn-start" type="button" class="btn-primary">はじめる</button>
-        <p id="play-count-label" class="play-count"></p>
-      </div>
-
-      <div class="endings-section">
-        <h2 class="section-heading">エンディングコレクション</h2>
-        <ul id="endings-gallery" class="endings-gallery"></ul>
-        <p class="endings-hint">2周目で隠し選択肢が出現します。Secretルートのヒントは妻のメッセージに——</p>
-      </div>
-    </section>
-
-    <!-- ゲーム画面 -->
-    <section id="game-screen" class="screen game-screen" hidden>
-      <div class="progress-track" aria-hidden="true">
-        <div id="progress-bar" class="progress-bar"></div>
-      </div>
-
-      <article class="scene-card">
-        <p id="scene-id-label" class="scene-id"></p>
-        <p id="scene-setting" class="scene-setting"></p>
-        <div id="scene-body" class="scene-body"></div>
-
-        <div id="ending-panel" class="ending-panel" hidden>
-          <span id="ending-badge" class="ending-badge"></span>
-          <h2 id="ending-title" class="ending-title"></h2>
-          <p id="ending-catch" class="ending-catch"></p>
-          <p id="ending-afterword" class="ending-afterword"></p>
-        </div>
-      </article>
-
-      <aside id="choices-panel" class="choices-panel">
-        <p id="question-text" class="question-text">——あなたなら、どうする？</p>
-        <div id="choices-list" class="choices-list"></div>
-      </aside>
-
-      <nav class="game-nav">
-        <button id="btn-restart" type="button" class="btn-ghost">最初から</button>
-        <button id="btn-title" type="button" class="btn-ghost">タイトルへ</button>
-      </nav>
+    <section class="screen index-screen">
+      <p class="index-intro">あなたの選択が、物語の行き先を決めます。プレイするシナリオを選んでください。</p>
+      <ul id="scenario-list" class="scenario-list"></ul>
     </section>
 
     <footer class="site-footer">
@@ -68,7 +27,7 @@
     </footer>
   </div>
 
-  <script src="js/scenes.js"></script>
-  <script src="js/game.js"></script>
+  <script src="js/scenarios.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

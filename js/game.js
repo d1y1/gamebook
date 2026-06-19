@@ -1,7 +1,13 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'yokohama-novel-v1';
+  const config = window.GAME_CONFIG;
+  if (!config) {
+    console.error('GAME_CONFIG が設定されていません');
+    return;
+  }
+
+  const STORAGE_KEY = config.storageKey;
 
   const els = {
     titleScreen: document.getElementById('title-screen'),
@@ -51,7 +57,7 @@
 
   function createGameState() {
     return {
-      sceneId: 'S01',
+      sceneId: config.startScene,
       flags: {},
       history: [],
     };
@@ -102,7 +108,7 @@
   }
 
   function renderEndingsGallery() {
-    const all = ['E01', 'E02', 'E03', 'E04', 'E05'];
+    const all = config.endingIds;
     els.endingsGallery.innerHTML = all
       .map((id) => {
         const scene = SCENES[id];

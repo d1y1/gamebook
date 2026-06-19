@@ -1,6 +1,8 @@
-# 首都直下型地震、横浜まで帰る
+# 分岐型小説
 
-分岐型インタラクティブ小説。首都直下型地震発生当日、東京23区のオフィスから横浜の自宅へ——あなたの選択が帰宅の道を決めます。
+複数の分岐型インタラクティブ小説をプレイできるサイトです。トップページでシナリオを選んでプレイします。
+
+現在公開中のシナリオ：**首都直下型地震、横浜まで帰る** — 首都直下型地震発生当日、東京23区のオフィスから横浜の自宅へ帰る物語。
 
 ## プレイ方法（ローカル）
 
@@ -50,13 +52,23 @@ git push -u origin main
 ## ファイル構成
 
 ```
-├── index.html          # メインページ
-├── css/style.css       # スタイル
+├── index.html                              # シナリオ一覧
+├── css/style.css                           # 共通スタイル
 ├── js/
-│   ├── scenes.js       # シーンデータ
-│   └── game.js         # ゲームエンジン
+│   ├── scenarios.js                        # シナリオ一覧メタデータ
+│   ├── index.js                            # 一覧ページ
+│   └── game.js                             # 共通ゲームエンジン
+├── scenarios/
+│   └── yokohama-earthquake/
+│       ├── index.html                      # プレイページ
+│       └── scenes.js                       # シーンデータ
 └── branching-earthquake-yokohama-scenario.md  # 原作シナリオ
 ```
+
+## 新しいシナリオを追加する
+
+1. `scenarios/<シナリオID>/` に `index.html` と `scenes.js` を作成
+2. `js/scenarios.js` の `SCENARIOS` 配列にメタデータを追加
 
 ## ライセンス
 
