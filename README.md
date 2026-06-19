@@ -5,7 +5,10 @@
 - **トップページ**（`index.html`）— 公開中のシナリオ一覧を表示
 - **プレイページ**（`scenarios/<シナリオID>/index.html`）— 各シナリオのゲーム本体
 
-現在公開中のシナリオ：**首都直下型地震、横浜まで帰る** — 首都直下型地震発生当日、東京23区のオフィスから横浜の自宅へ帰る物語。
+現在公開中のシナリオ：
+
+- **隣人の手紙** — 孤独死した隣人から届く三通の手紙を届ける物語。推理と罪が交差する心理サスペンス。
+- **首都直下型地震、横浜まで帰る** — 首都直下型地震発生当日、東京23区のオフィスから横浜の自宅へ帰る物語。
 
 ## プレイ方法（ローカル）
 
@@ -62,6 +65,9 @@ git push -u origin main
 │   ├── index.js                            # 一覧ページ
 │   └── game.js                             # 共通ゲームエンジン
 ├── scenarios/
+│   ├── neighbor-letters/
+│   │   ├── index.html                      # プレイページ
+│   │   └── scenes.js                       # シーンデータ
 │   └── yokohama-earthquake/
 │       ├── index.html                      # プレイページ
 │       └── scenes.js                       # シーンデータ
@@ -167,7 +173,15 @@ const ENDING_META = {
 | 自動進行 | `continueTo`, `continueLabel`（任意） | 「続ける」ボタンで次シーンへ |
 | エンディング | `ending` | エンディング表示＋周回数を記録 |
 
-参考実装: `scenarios/yokohama-earthquake/`
+参考実装: `scenarios/yokohama-earthquake/` / `scenarios/neighbor-letters/`
+
+## ゲーム仕様（隣人の手紙）
+
+| 項目 | 内容 |
+|------|------|
+| エンディング | 5種（Good / Normal / Bad / Secret） |
+| 隠し選択肢 | 2周目で「あの夜、ノックの音を思い出す」／ 告白ルートで「手紙に返事を書く」 |
+| 進行保存 | エンディングコレクション・周回数を localStorage に保存（キー: `neighbor-letters-v1`） |
 
 ## ライセンス
 
