@@ -67,7 +67,8 @@ git push -u origin main
 ├── scenarios/
 │   ├── neighbor-letters/
 │   │   ├── index.html                      # プレイページ
-│   │   └── scenes.js                       # シーンデータ
+│   │   ├── scenes.js                       # シーンデータ
+│   │   └── branching-neighbor-letters-scenario.md  # 原作シナリオ
 │   └── yokohama-earthquake/
 │       ├── index.html                      # プレイページ
 │       └── scenes.js                       # シーンデータ
