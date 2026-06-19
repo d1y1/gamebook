@@ -29,7 +29,7 @@
       <div class="endings-section">
         <h2 class="section-heading">エンディングコレクション</h2>
         <ul id="endings-gallery" class="endings-gallery"></ul>
-        <p class="endings-hint">2周目で隠し選択肢が出現します。あの夜のノック——覚えていますか？</p>
+        <p class="endings-hint">E01〜E04・E06 をすべて回収すると、隠し選択肢が出現します。あの夜のノック——覚えていますか？</p>
       </div>
     </section>
 
@@ -73,7 +73,8 @@
     window.GAME_CONFIG = {
       storageKey: 'neighbor-letters-v1',
       startScene: 'S01',
-      endingIds: ['E01', 'E02', 'E03', 'E04', 'E05'],
+      endingIds: ['E01', 'E02', 'E03', 'E04', 'E05', 'E06'],
+      secretEndingIds: ['E05'],
     };
   </script>
   <script src="scenes.js"></script>

@@ -86,11 +86,26 @@
       .join('');
   }
 
+  function endingsRequiredExceptSecret() {
+    const all = config.endingIds || [];
+    const secret = config.secretEndingIds || [];
+    if (!secret.length) return all;
+    return all.filter((id) => !secret.includes(id));
+  }
+
+  function hasAllEndingsExceptSecret() {
+    const required = endingsRequiredExceptSecret();
+    if (!required.length) return true;
+    return required.every((id) => save.unlockedEndings.includes(id));
+  }
+
   function choiceVisible(choice, gameState) {
     if (choice.hidden) {
       if (choice.requireSecondPlay && save.playCount < 1) return false;
+      if (choice.requireAllEndingsExceptSecret && !hasAllEndingsExceptSecret()) return false;
       if (choice.requireFlag && !gameState.flags[choice.requireFlag]) return false;
     }
+    if (choice.requireAllEndingsExceptSecret && !hasAllEndingsExceptSecret()) return false;
     if (choice.requireFlag && !choice.hidden && !gameState.flags[choice.requireFlag]) {
       return false;
     }
