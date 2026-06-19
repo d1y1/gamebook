@@ -24,6 +24,7 @@
     endingAfterword: document.getElementById('ending-afterword'),
     progressBar: document.getElementById('progress-bar'),
     sceneIdLabel: document.getElementById('scene-id-label'),
+    sceneChapter: document.getElementById('scene-chapter'),
     btnStart: document.getElementById('btn-start'),
     btnRestart: document.getElementById('btn-restart'),
     btnTitle: document.getElementById('btn-title'),
@@ -141,6 +142,10 @@
     if (!scene) return;
 
     els.sceneIdLabel.textContent = scene.id;
+    if (els.sceneChapter) {
+      els.sceneChapter.textContent = scene.chapter || '';
+      els.sceneChapter.hidden = !scene.chapter;
+    }
     els.sceneSetting.textContent = scene.setting || '';
     els.sceneSetting.hidden = !scene.setting;
 
@@ -185,7 +190,10 @@
     const visible = (scene.choices || []).filter((c) => choiceVisible(c, state));
 
     els.choicesPanel.hidden = false;
-    els.questionText.hidden = false;
+    els.questionText.hidden = !scene.questionText;
+    if (scene.questionText) {
+      els.questionText.textContent = scene.questionText;
+    }
     els.choicesList.innerHTML = '';
 
     visible.forEach((choice) => {

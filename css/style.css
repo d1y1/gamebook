@@ -5,23 +5,23 @@
 }
 
 :root {
-  --bg-deep: #0f1218;
-  --bg-card: #1a1f2b;
-  --bg-elevated: #242b3a;
-  --text-primary: #e8eaed;
-  --text-secondary: #9aa3b2;
-  --text-muted: #6b7380;
-  --accent-red: #e53935;
-  --accent-red-dim: rgba(229, 57, 53, 0.15);
-  --accent-amber: #ffb74d;
-  --accent-green: #66bb6a;
-  --accent-blue: #42a5f5;
-  --accent-purple: #ab47bc;
-  --border: rgba(255, 255, 255, 0.08);
+  --bg-deep: #f5f6f8;
+  --bg-card: #ffffff;
+  --bg-elevated: #eef0f4;
+  --text-primary: #1a1f2b;
+  --text-secondary: #5a6270;
+  --text-muted: #8a919c;
+  --accent-red: #d32f2f;
+  --accent-red-dim: rgba(211, 47, 47, 0.1);
+  --accent-amber: #e65100;
+  --accent-green: #2e7d32;
+  --accent-blue: #1565c0;
+  --accent-purple: #7b1fa2;
+  --border: rgba(0, 0, 0, 0.08);
   --radius: 12px;
   --font-sans: 'Noto Sans JP', system-ui, sans-serif;
   --font-serif: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 html {
@@ -35,8 +35,8 @@ body {
   font-family: var(--font-sans);
   background: var(--bg-deep);
   background-image:
-    radial-gradient(ellipse at 20% 0%, rgba(229, 57, 53, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 100%, rgba(66, 165, 245, 0.05) 0%, transparent 50%);
+    radial-gradient(ellipse at 20% 0%, rgba(211, 47, 47, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(21, 101, 192, 0.04) 0%, transparent 50%);
   color: var(--text-primary);
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -115,7 +115,7 @@ body {
 }
 
 .scenario-link:hover {
-  border-color: rgba(229, 57, 53, 0.4);
+  border-color: rgba(211, 47, 47, 0.35);
   transform: translateY(-2px);
 }
 
@@ -203,11 +203,11 @@ body {
 .btn-primary {
   background: var(--accent-red);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(229, 57, 53, 0.35);
+  box-shadow: 0 2px 12px rgba(211, 47, 47, 0.25);
 }
 
 .btn-primary:hover {
-  background: #c62828;
+  background: #b71c1c;
   transform: translateY(-1px);
 }
 
@@ -276,7 +276,7 @@ body {
 
 .gallery-item.ending-normal .gallery-type { background: rgba(154, 163, 178, 0.2); color: var(--text-secondary); }
 .gallery-item.ending-good .gallery-type { background: rgba(102, 187, 106, 0.2); color: var(--accent-green); }
-.gallery-item.ending-bad .gallery-type { background: rgba(229, 57, 53, 0.2); color: var(--accent-red); }
+.gallery-item.ending-bad .gallery-type { background: rgba(211, 47, 47, 0.12); color: var(--accent-red); }
 .gallery-item.ending-secret .gallery-type { background: rgba(171, 71, 188, 0.2); color: var(--accent-purple); }
 
 .gallery-title {
@@ -317,11 +317,20 @@ body {
 }
 
 .scene-id {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.35rem;
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   color: var(--text-muted);
   font-family: monospace;
+}
+
+.scene-chapter {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-primary);
 }
 
 .scene-setting {
@@ -374,7 +383,7 @@ body {
 
 .ending-badge.ending-normal { background: rgba(154, 163, 178, 0.2); color: var(--text-secondary); }
 .ending-badge.ending-good { background: rgba(102, 187, 106, 0.25); color: var(--accent-green); }
-.ending-badge.ending-bad { background: rgba(229, 57, 53, 0.25); color: var(--accent-red); }
+.ending-badge.ending-bad { background: rgba(211, 47, 47, 0.12); color: var(--accent-red); }
 .ending-badge.ending-secret { background: rgba(171, 71, 188, 0.25); color: var(--accent-purple); }
 
 .ending-title {
@@ -428,8 +437,8 @@ body {
 }
 
 .choice-btn:hover {
-  background: #2d3548;
-  border-color: rgba(255, 255, 255, 0.15);
+  background: #e4e8ef;
+  border-color: rgba(0, 0, 0, 0.12);
   transform: translateY(-1px);
 }
 
@@ -437,7 +446,7 @@ body {
   opacity: 0.65;
   border-style: dashed;
   border-color: var(--accent-purple);
-  color: #ce93d8;
+  color: var(--accent-purple);
   font-size: 0.9rem;
 }
 
@@ -453,7 +462,7 @@ body {
 }
 
 .choice-btn.choice-primary:hover {
-  background: #c62828;
+  background: #b71c1c;
 }
 
 .choice-btn.choice-continue {
