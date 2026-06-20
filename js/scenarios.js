@@ -3,6 +3,15 @@
  */
 const SCENARIOS = [
   {
+    id: 'tunnel-orbs',
+    title: '幽霊に嫌われた話',
+    hook: '心霊スポットで撮った写真——友達にはオーブが写っていた。自分だけ、一枚も。笑い合ったその夜から、部屋でラップ音が鳴り始めた。',
+    genre: '心霊ホラー',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/tunnel-orbs/',
+  },
+  {
     id: 'neighbor-letters',
     title: '隣人の手紙',
     hook: '孤独死した隣人から、三通の手紙が届く。封筒には名前だけ。素性も住所もわからない宛先を、推理していくうちに——あなたも、手紙の宛先の一人だった。',
