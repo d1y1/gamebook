@@ -21,7 +21,7 @@
     <section id="title-screen" class="screen title-screen">
       <div class="title-card">
         <p class="title-hook">震災三日目、体育館の避難所。生後二ヶ月の蓮が三時間泣き続け、誰も眠れない。届いたブルーシートは六枚だけ——屋根の雨漏れ、寝床、足元の泥。大工だった木下爺が言う。「一枚あれば、ゆりかごが作れる」。父の家は、二キロ先で音が途切れている。</p>
-        <p class="title-meta">災害ヒューマンドラマ / インタラクティブ小説 v1.0</p>
+        <p class="title-meta">災害ヒューマンドラマ / インタラクティブ小説 v1.1</p>
         <button id="btn-start" type="button" class="btn-primary">はじめる</button>
         <p id="play-count-label" class="play-count"></p>
       </div>
@@ -29,7 +29,7 @@
       <div class="endings-section">
         <h2 class="section-heading">エンディングコレクション</h2>
         <ul id="endings-gallery" class="endings-gallery"></ul>
-        <p class="endings-hint">2周目で木下爺への選択肢が出現。全エンディング回収後、Secretルートが開きます——</p>
+        <p class="endings-hint">2周目で隠し選択肢が出現。E01〜E04回収後、Secretルート2種（木下爺／父のアルバム）が開きます——</p>
       </div>
     </section>
 
@@ -73,8 +73,8 @@
     window.GAME_CONFIG = {
       storageKey: 'blue-sheet-cradle-v1',
       startScene: 'S01',
-      endingIds: ['E01', 'E02', 'E03', 'E04', 'E05'],
-      secretEndingIds: ['E05'],
+      endingIds: ['E01', 'E02', 'E03', 'E04', 'E05', 'E06'],
+      secretEndingIds: ['E05', 'E06'],
     };
   </script>
   <script src="scenes.js"></script>
