@@ -30,6 +30,15 @@ const SCENARIOS = [
     path: 'scenarios/yokohama-earthquake/',
   },
   {
+    id: 'wonderful-world',
+    title: '素晴らしきこの世界',
+    hook: 'AIがこの世のすべてを請け負い、人間には娯楽だけを与える。読み手だけに、特別な権限が提案される——あなたは、どう選ぶ？',
+    genre: 'SF / メタフィクション',
+    version: 'v1.0',
+    endings: 4,
+    path: 'scenarios/wonderful-world/',
+  },
+  {
     id: 'blue-sheet-cradle',
     title: 'ブルーシートのゆりかご',
     hook: '震災三日目、体育館の避難所。生後二ヶ月の蓮が三時間泣き続け、誰も眠れない。届いたブルーシートは六枚だけ——屋根の雨漏れ、寝床、足元の泥。大工だった木下爺が言う。「一枚あれば、ゆりかごが作れる」。父の家は、二キロ先で音が途切れている。',
