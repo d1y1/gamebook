@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="鍵のかかった書斎で発見された死体。四人の容疑者と、それぞれに向けられた証拠。本格ミステリー分岐小説。">
+  <title>完全なる殺人</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="site-header">
+      <p class="site-label"><a class="back-link" href="../../index.html">← シナリオ一覧</a></p>
+      <h1 class="site-title">完全なる殺人</h1>
+    </header>
+
+    <!-- タイトル画面 -->
+    <section id="title-screen" class="screen title-screen">
+      <div class="title-card">
+        <p class="title-hook">鍵のかかった書斎で、不動産王の死体が見つかる。現場には四人分の恨みが——イヤリング、カフリンク、口紅、切れたベルト。あなたは、どの容疑者を追う？</p>
+        <p class="title-meta">本格ミステリー / インタラクティブ小説 v1.0</p>
+        <button id="btn-start" type="button" class="btn-primary">はじめる</button>
+        <p id="play-count-label" class="play-count"></p>
+      </div>
+
+      <div class="endings-section">
+        <h2 class="section-heading">エンディングコレクション</h2>
+        <ul id="endings-gallery" class="endings-gallery"></ul>
+        <p class="endings-hint">E01〜E04 をすべて回収すると、隠し選択肢が出現します。四人とも、犯人にできたあとに——</p>
+      </div>
+    </section>
+
+    <!-- ゲーム画面 -->
+    <section id="game-screen" class="screen game-screen" hidden>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <article class="scene-card">
+        <p id="scene-id-label" class="scene-id"></p>
+        <h2 id="scene-chapter" class="scene-chapter" hidden></h2>
+        <p id="scene-setting" class="scene-setting"></p>
+        <div id="scene-body" class="scene-body"></div>
+
+        <div id="ending-panel" class="ending-panel" hidden>
+          <span id="ending-badge" class="ending-badge"></span>
+          <h2 id="ending-title" class="ending-title"></h2>
+          <p id="ending-catch" class="ending-catch"></p>
+          <p id="ending-afterword" class="ending-afterword"></p>
+        </div>
+      </article>
+
+      <aside id="choices-panel" class="choices-panel">
+        <p id="question-text" class="question-text">——あなたなら、どうする？</p>
+        <div id="choices-list" class="choices-list"></div>
+      </aside>
+
+      <nav class="game-nav">
+        <button id="btn-restart" type="button" class="btn-ghost">最初から</button>
+        <button id="btn-title" type="button" class="btn-ghost">タイトルへ</button>
+      </nav>
+    </section>
+
+    <footer class="site-footer">
+      <p>架空のシナリオです。殺人・自殺を題材にしたフィクション作品。</p>
+    </footer>
+  </div>
+
+  <script>
+    window.GAME_CONFIG = {
+      storageKey: 'perfect-murder-v1',
+      startScene: 'S01',
+      endingIds: ['E01', 'E02', 'E03', 'E04', 'E05'],
+      secretEndingIds: ['E05'],
+    };
+  </script>
+  <script src="scenes.js"></script>
+  <script src="../../js/game.js"></script>
+</body>
+</html>

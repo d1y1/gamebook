@@ -39,6 +39,15 @@ const SCENARIOS = [
     path: 'scenarios/wonderful-world/',
   },
   {
+    id: 'perfect-murder',
+    title: '完全なる殺人',
+    hook: '鍵のかかった書斎で、不動産王の死体が見つかる。現場には四人分の恨みが——イヤリング、カフリンク、口紅、切れたベルト。あなたは、どの容疑者を追う？',
+    genre: '本格ミステリー',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/perfect-murder/',
+  },
+  {
     id: 'blue-sheet-cradle',
     title: 'ブルーシートのゆりかご',
     hook: '震災三日目、体育館の避難所。生後二ヶ月の蓮が三時間泣き続け、誰も眠れない。届いたブルーシートは六枚だけ——屋根の雨漏れ、寝床、足元の泥。大工だった木下爺が言う。「一枚あれば、ゆりかごが作れる」。父の家は、二キロ先で音が途切れている。',
