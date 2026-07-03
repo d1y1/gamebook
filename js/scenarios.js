@@ -56,4 +56,13 @@ const SCENARIOS = [
     endings: 6,
     path: 'scenarios/blue-sheet-cradle/',
   },
+  {
+    id: 'last-train',
+    title: '終電の向こう側',
+    hook: '金曜深夜、終電に飛び乗った瞬間——ドアに挟まれそうな女性の手を引いた。彼女はスーツケースを抱え、目が赤かった。「ありがとう」。その一言から、長い夜が始まる。',
+    genre: '都会恋愛 / ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/last-train/',
+  },
 ];
