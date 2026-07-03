@@ -65,4 +65,13 @@ const SCENARIOS = [
     endings: 5,
     path: 'scenarios/last-train/',
   },
+  {
+    id: 'achievement-sound',
+    title: '実績解除の音がする。',
+    hook: '新婚の同僚が「うちの妻が」と言った瞬間、実績解除の音がした気がした。結婚、昇進、婚約——誰かの人生が一段階進む瞬間に、いつも居合わせる「立会人」の物語。',
+    genre: '日常 / ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 4,
+    path: 'scenarios/achievement-sound/',
+  },
 ];
