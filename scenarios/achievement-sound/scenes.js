@@ -414,7 +414,7 @@ ${yamadaLine}
     chapter: '立会人として',
     ending: {
       type: 'Good',
-      title: '祝福の音',
+      title: '招待状の+1',
       catchphrase: '誰かの実績を見届けることも、立派な役割だった',
       afterword: 'あなたは、立会人という自分の役割を受け入れた。',
     },
@@ -449,7 +449,7 @@ ${yamadaLine}
     chapter: '自分の番',
     ending: {
       type: 'Normal',
-      title: '新しい音',
+      title: 'Now Loading...',
       catchphrase: '見届ける側から、解除する側へ',
       afterword: 'あなたは、自分自身の実績解除に向けて歩き出した。',
     },
@@ -480,7 +480,7 @@ ${yamadaLine}
     chapter: '羨望',
     ending: {
       type: 'Bad',
-      title: '遠い音',
+      title: '他人の配信を見ている',
       catchphrase: '実績解除の音は、いつも他人から聞こえる',
       afterword: 'あなたは、まだ立ち止まったままだった。',
     },
@@ -508,7 +508,7 @@ ${yamadaLine}
     chapter: '気づき',
     ending: {
       type: 'Secret',
-      title: '連鎖する音',
+      title: '隠しトリガー：あなた',
       catchphrase: '実績解除は、誰かの立会いがあって初めて鳴る',
       afterword: '全エンディングを見た者だけが辿り着く、最後の真実。',
     },
