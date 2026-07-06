@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="少年刑務所で落語の真似事を始めた若者が、ヤジだらけの一席の中で初めて人を笑わせる。二度と越えられない高座の記憶を描く物語。">
+  <title>囚人落語</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="site-header">
+      <p class="site-label"><a class="back-link" href="../../index.html">← シナリオ一覧</a></p>
+      <h1 class="site-title">囚人落語</h1>
+    </header>
+
+    <section id="title-screen" class="screen title-screen">
+      <div class="title-card">
+        <p class="title-hook">罪を犯した若者が、房の隅で拾った落語本から真似事を覚える。同室の先輩にけしかけられ、ヤジの飛ぶ雑居房で座った一席だけが、人生でいちばん人を笑わせた夜になる。</p>
+        <p class="title-meta">青春 / ヒューマンドラマ v1.0</p>
+        <button id="btn-start" type="button" class="btn-primary">はじめる</button>
+        <p id="play-count-label" class="play-count"></p>
+      </div>
+
+      <div class="endings-section">
+        <h2 class="section-heading">エンディングコレクション</h2>
+        <ul id="endings-gallery" class="endings-gallery"></ul>
+        <p class="endings-hint">E01 と E03 を回収すると、「自分の話にすり替える」が出現します。</p>
+      </div>
+    </section>
+
+    <section id="game-screen" class="screen game-screen" hidden>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <article class="scene-card">
+        <p id="scene-id-label" class="scene-id"></p>
+        <h2 id="scene-chapter" class="scene-chapter" hidden></h2>
+        <p id="scene-setting" class="scene-setting"></p>
+        <div id="scene-body" class="scene-body"></div>
+
+        <div id="ending-panel" class="ending-panel" hidden>
+          <span id="ending-badge" class="ending-badge"></span>
+          <h2 id="ending-title" class="ending-title"></h2>
+          <p id="ending-catch" class="ending-catch"></p>
+          <p id="ending-afterword" class="ending-afterword"></p>
+        </div>
+      </article>
+
+      <aside id="choices-panel" class="choices-panel">
+        <p id="question-text" class="question-text">——どう座る？</p>
+        <div id="choices-list" class="choices-list"></div>
+      </aside>
+
+      <nav class="game-nav">
+        <button id="btn-restart" type="button" class="btn-ghost">最初から</button>
+        <button id="btn-title" type="button" class="btn-ghost">タイトルへ</button>
+      </nav>
+    </section>
+
+    <footer class="site-footer">
+      <p>架空のシナリオです。刑務所内の描写を含むフィクション作品です。</p>
+    </footer>
+  </div>
+
+  <script>
+    window.GAME_CONFIG = {
+      storageKey: 'prisoner-rakugo-v1',
+      startScene: 'S01',
+      endingIds: ['E01', 'E02', 'E03', 'E04'],
+      secretEndingIds: ['E04'],
+    };
+  </script>
+  <script src="scenes.js"></script>
+  <script src="../../js/game.js"></script>
+</body>
+</html>

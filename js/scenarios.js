@@ -83,4 +83,13 @@ const SCENARIOS = [
     endings: 4,
     path: 'scenarios/heaven-no-equality/',
   },
+  {
+    id: 'prisoner-rakugo',
+    title: '囚人落語',
+    hook: '罪を犯した若者が、房の隅で拾った落語本から真似事を覚える。同室の先輩にけしかけられ、ヤジの飛ぶ雑居房で座った一席だけが、人生でいちばん人を笑わせた夜になる。',
+    genre: '青春 / ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 4,
+    path: 'scenarios/prisoner-rakugo/',
+  },
 ];
