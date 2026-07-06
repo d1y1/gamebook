@@ -101,4 +101,13 @@ const SCENARIOS = [
     endings: 4,
     path: 'scenarios/game-book/',
   },
+  {
+    id: 'paparazzi-paparazzi',
+    title: 'パパラッチ・パパラッチ',
+    hook: 'ゲスもゲス。安全なところから自分の正義を振りかざす。目には目を、歯には歯を——パパラッチにはパパラッチで成敗するのだ。今夜のターゲットは名もなき君だ。',
+    genre: '社会派サスペンス',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/paparazzi-paparazzi/',
+  },
 ];
