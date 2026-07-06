@@ -92,4 +92,13 @@ const SCENARIOS = [
     endings: 4,
     path: 'scenarios/prisoner-rakugo/',
   },
+  {
+    id: 'game-book',
+    title: 'ゲームブック',
+    hook: '物語と選択肢、ページを飛ぶ冒険。やり慣れると正解を選びたくなくなる——クリアから遠いBad Endを巡り、気づけば作業になっていた。いま、正解を真剣に選ぶことを楽しもうと思う。',
+    genre: 'メタフィクション / 内省ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 4,
+    path: 'scenarios/game-book/',
+  },
 ];
