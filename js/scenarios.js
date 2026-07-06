@@ -74,4 +74,13 @@ const SCENARIOS = [
     endings: 4,
     path: 'scenarios/achievement-sound/',
   },
+  {
+    id: 'heaven-no-equality',
+    title: '天国に平等という言葉はない',
+    hook: 'はじめましての瞬間から、さよならは決まっている。それを知ってしまったあなたは、一歩も進めなくなった——黄昏のベンチで、また誰かが隣に座る。',
+    genre: '哲学的ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 4,
+    path: 'scenarios/heaven-no-equality/',
+  },
 ];
