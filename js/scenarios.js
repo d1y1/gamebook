@@ -110,4 +110,13 @@ const SCENARIOS = [
     endings: 5,
     path: 'scenarios/paparazzi-paparazzi/',
   },
+  {
+    id: 'unnamed-war',
+    title: 'まだ名もなき戦争',
+    hook: '第一次世界大戦。第二次世界大戦。この渦中、まだこの戦争に名前はなかった。過去を振り返った未来で名前がついたわけだ。では、十年後、今を振り返った時、この日常になんと名前をつけるだろう。',
+    genre: '哲学的ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/unnamed-war/',
+  },
 ];
