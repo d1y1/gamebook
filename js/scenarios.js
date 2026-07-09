@@ -119,4 +119,13 @@ const SCENARIOS = [
     endings: 5,
     path: 'scenarios/unnamed-war/',
   },
+  {
+    id: 'death-penalty-beauty',
+    title: 'すべての罰が死刑なら美しく生きるのか',
+    hook: '窃盗も遅刻も、信号無視も、すべて死刑。十年間、犯罪率ゼロの国は「美しく生きろ」と唱える。信号の前で、三歳の子が走り出した——その瞬間、あなたは美しい生き方と、ただの生き延びを見分けられるだろうか。',
+    genre: '哲学的ディストピア / 社会派ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/death-penalty-beauty/',
+  },
 ];
