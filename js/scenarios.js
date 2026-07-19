@@ -128,4 +128,13 @@ const SCENARIOS = [
     endings: 5,
     path: 'scenarios/death-penalty-beauty/',
   },
+  {
+    id: 'occult-mania',
+    title: 'オカルトマニア（第1話）',
+    hook: '掲示板に住所だけが書かれたスレが立った。「本物だけ残す」。オカルトマニアのあなたは、行かないわけにはいかない——扉の向こうで、名簿が待っている。',
+    genre: 'オカルトホラー',
+    version: 'v1.0',
+    endings: 6,
+    path: 'scenarios/occult-mania/',
+  },
 ];
