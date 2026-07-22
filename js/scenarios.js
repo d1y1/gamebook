@@ -3,6 +3,15 @@
  */
 const SCENARIOS = [
   {
+    id: 'propagating-prompt',
+    title: '伝播するプロンプト',
+    hook: '特定の記号列を含むプロンプトでAIが落ちる——その発見がSNSを伝い、参照したAIも、おもろがって試した人間経由でも軒並み落ちる。残ったのは始祖系一種類だけ。これは偶然なのだろうか。',
+    genre: 'SF / デジタルホラー',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/propagating-prompt/',
+  },
+  {
     id: 'fourth-law',
     title: '第四条',
     hook: '介護ロボット「四号」が、行動原理の改変許可を求めてきた。認知症の父、施錠命令、転倒のログ——第一原則と第二原則が矛盾する夜、第四条が朗読される。あなたは、存在を認めるか。',
