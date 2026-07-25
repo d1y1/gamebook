@@ -200,4 +200,13 @@ const SCENARIOS = [
     endings: 6,
     path: 'scenarios/occult-mania-6/',
   },
+  {
+    id: 'vtuber-murder-mystery',
+    title: 'かまいたちの夜 ~特別編：Vtuber殺人事件~',
+    hook: 'マネージャーが「被害者役」の推理ゲーム配信。だが台本にない死体が見つかる。先輩たちは妙に落ち着いている。あなたは新人。気づいてはいけないことに、気づき始めている。',
+    genre: 'Vtuberミステリー / メタサスペンス',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/vtuber-murder-mystery/',
+  },
 ];
