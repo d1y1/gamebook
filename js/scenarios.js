@@ -138,6 +138,15 @@ const SCENARIOS = [
     path: 'scenarios/unnamed-war/',
   },
   {
+    id: 'war-kills-memories',
+    title: '戦争は思い出を殺す',
+    hook: '祖父は戦争の話を一度もしなかった。遺品の箱には「開けないでくれたまえ」——フィルム、名もない子供の写真、封書。戦争は人を殺すより先に、思い出を殺す。あなたは殺す側に立つか。',
+    genre: '戦争記憶 / 哲学的ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/war-kills-memories/',
+  },
+  {
     id: 'death-penalty-beauty',
     title: 'すべての罰が死刑なら美しく生きるのか',
     hook: '窃盗も遅刻も、信号無視も、すべて死刑。十年間、犯罪率ゼロの国は「美しく生きろ」と唱える。信号の前で、三歳の子が走り出した——その瞬間、あなたは美しい生き方と、ただの生き延びを見分けられるだろうか。',
