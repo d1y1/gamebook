@@ -129,6 +129,15 @@ const SCENARIOS = [
     path: 'scenarios/paparazzi-paparazzi/',
   },
   {
+    id: 'gizensha-dan',
+    title: '偽善者団',
+    hook: '月会費三千円。ホームレス支援、擁護施設、介護施設——弱い人に優しくする、その優越感に浸る。会員は皆、自分がいい人間だと自覚している。だからこそ、偽善を隠さない。',
+    genre: '社会派ヒューマンドラマ',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/gizensha-dan/',
+  },
+  {
     id: 'unnamed-war',
     title: 'まだ名もなき戦争',
     hook: '第一次世界大戦。第二次世界大戦。この渦中、まだこの戦争に名前はなかった。過去を振り返った未来で名前がついたわけだ。では、十年後、今を振り返った時、この日常になんと名前をつけるだろう。',
