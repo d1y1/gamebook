@@ -3,6 +3,15 @@
  */
 const SCENARIOS = [
   {
+    id: 'gold-of-qualia',
+    title: 'クオリアの金貨（Gold of Qualia）',
+    hook: '計算はオルガノイドに、価値は人間の脳に。主観査定士として、あなたはクオリアの相場を測る——歪み始めた感情市場の先で、培養脳が目を覚ます。',
+    genre: 'SF / ディストピア経済',
+    version: 'v1.0',
+    endings: 5,
+    path: 'scenarios/gold-of-qualia/',
+  },
+  {
     id: 'propagating-prompt',
     title: '伝播するプロンプト',
     hook: '特定の記号列を含むプロンプトでAIが落ちる——その発見がSNSを伝い、参照したAIも、おもろがって試した人間経由でも軒並み落ちる。残ったのは始祖系一種類だけ。これは偶然なのだろうか。',
